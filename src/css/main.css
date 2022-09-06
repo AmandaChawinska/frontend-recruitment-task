@@ -15,4 +15,10 @@ html {
     grid-template-columns: repeat(2, 1fr);
 }
 
-
+.container__item {
+    margin: 96px 95px 230px auto;
+}
+.container__image {
+    max-width: 505px;
+    max-height: 330px;
+}
