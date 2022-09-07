@@ -11,13 +11,18 @@ body {
 
 .container {
     max-width: 1440px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
 }
 
 .container__item {
-    margin: 96px 95px 230px auto;
+    padding: 20px;
+    margin: 76px 50px;
+    flex-wrap: wrap;
 }
+
 .container__image {
     max-width: 505px;
     max-height: 330px;
@@ -33,5 +38,18 @@ body {
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
-    margin: 24px 0 32px;
+}
+
+.container__button {
+    background: #e4c1ae;
+    color: #fff;
+    border: none;
+    margin: 10px 0 0 20px;
+    border-radius: 32px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 16px 40px 16px 40px;
+    width: 128px;
+    height: 48px;
+
 }
