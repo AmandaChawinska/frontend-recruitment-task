@@ -14,7 +14,6 @@
     <link href="src/css/main.css" rel="stylesheet">
     <script defer src="src/js/main.js"></script>
 </head>
-
 <body>
     <div class="container">
         <div class="container__item ">
@@ -26,8 +25,18 @@
             <p class="container__paragraph">Infinitely scalable, feature-rich and cloud-native data  management and
                 protection modern and legacy infrastructures and SaaS platforms, managed via a  single app with no
                 hardware required.</p>
-            <button class="container__button">Button</button>
+            <button data-modal-target="#modal" class="container__button">Button</button>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <div class="title">Alert!</div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                  You have clicked <span class="modal-count">X times</span> to related button.
+                </div>
+            </div>
+            <div  id="overlay"></div>
         </div>
-
+    
     </div>
 </body>
