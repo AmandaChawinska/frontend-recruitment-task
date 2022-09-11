@@ -68,7 +68,7 @@ body {
     }
 }
 
-.container__button {
+.container__button, .container__reset {
     background: hsl(21, 50%, 79%);
     color: #fff;
     border: none;
@@ -80,6 +80,10 @@ body {
     width: 128px;
     height: 48px;
 }
+
+/* .container__reset--hidden {
+    display: none;
+} */
 @media(max-width: 767px){
     .container__button{
         margin: 5px 0 0 10px;
@@ -142,7 +146,6 @@ height: 100px;
 @media(max-width: 767px){
     .modal-header .title{
         font-size:20px;
-        /* padding: 0; */
     }
 }
 .modal-header .close-button{
@@ -182,6 +185,3 @@ height: 100px;
     pointer-events: all;
 }
 
-.modal-count {
-   font-weight: bold;
-}
